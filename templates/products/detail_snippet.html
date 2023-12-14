@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- {% include 'navbar.html'   %} --> 
+    {% if object.content %}
+    <p>{{ object.content }}</p>
+    {% else %}
+    <p>Content had not been created yet</p>
+
+    {% endif %}
+{% endblock content %}
